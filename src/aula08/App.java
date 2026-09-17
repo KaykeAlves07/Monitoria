@@ -1,5 +1,8 @@
+package aula08;
+
 public class App {
     public static void main(String[] args) throws Exception {
+        System.out.println("Aula 08");
 
         Produto teclado = new Produto("Teclado", 150);
         Produto mouse = new Produto("Mouse", 80);

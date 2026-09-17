@@ -1,3 +1,5 @@
+package aula07;
+
 public class Produto {
     private String descricao;
     private double preco = 0;

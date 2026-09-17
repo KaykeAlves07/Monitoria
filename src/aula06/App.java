@@ -1,5 +1,8 @@
+package aula06;
+
 public class App {
     public static void main(String[] args) throws Exception {
+        System.out.println("AULA 06");
 
         Produto teclado = new Produto("Teclado", 150);
 
@@ -27,6 +30,5 @@ public class App {
         System.out.printf("teclado == outroTeclado: %b\n", teclado == outroTeclado);
         System.out.printf("itemPrincipal.getProduto() == itemOutroProduto.getProduto(): %b\n", itemPrincipal.getProduto() == itemOutroProduto.getProduto());
         System.out.printf("Subtotal: %.2f\n", itemOutroProduto.calcularSubtotal());
-
     }
 }

@@ -1,3 +1,5 @@
+package aula09;
+
 public class ItemPedido {
     private Produto produto; // Produto é o tipo e produto é a variavel
     private int quantidade = 0;

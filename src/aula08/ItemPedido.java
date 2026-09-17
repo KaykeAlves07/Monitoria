@@ -1,3 +1,5 @@
+package aula08;
+
 public class ItemPedido {
     private Produto produto; // Produto é o tipo e produto é a variavel
     private int quantidade = 0;
@@ -14,15 +16,4 @@ public class ItemPedido {
     void aumentarQuantidade(int unidades){
         if(unidades >= 0) quantidade += unidades;
     }
-
-
-    public Produto getProduto() {
-        return produto;
-    }
-
-    public int getQuantidade() {
-        return quantidade;
-    }
-
-    
 }

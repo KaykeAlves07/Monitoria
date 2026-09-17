@@ -1,7 +1,5 @@
-# Ignorar arquivos compilados
 bin/
-out/
-*.class
-
-# Ignorar configurações da IDE
+.settings/
 .vscode/
+.classpath
+.project
