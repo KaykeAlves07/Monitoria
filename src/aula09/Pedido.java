@@ -5,18 +5,18 @@ import java.util.ArrayList;
 
 public class Pedido {
     private List<ItemPedido> itens;
+    private boolean fechado;
 
     public Pedido(){
         itens = new ArrayList<>();
+        fechado = false;
     }
 
-            // public void adicionarItem(ItemPedido item){
-            //     itens.add(item);
-            // }
-    // Lab 8:
     public void adicionarItem(Produto produto, int quantidade){
-        ItemPedido item = new ItemPedido(produto, quantidade);
-        itens.add(item);
+        if(!fechado){
+            ItemPedido item = new ItemPedido(produto, quantidade);
+            itens.add(item);
+        }
     }
 
     public double calcularTotal(){
@@ -25,5 +25,9 @@ public class Pedido {
             total += item.calcularSubtotal();
         }
         return total;
+    }
+
+    public void fechar(){
+        fechado = true;
     }
 }
